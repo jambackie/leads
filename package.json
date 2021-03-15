@@ -1,0 +1,30 @@
+{
+  "name": "leads",
+  "version": "1.0.0",
+  "description": "test",
+  "main": "index.js",
+  "scripts": {
+    "serve": "parcel src/index.html",
+    "build": "parcel build src/index.html --no-source-maps --no-cache --public-url ."
+  },
+  "parcelCleanPaths": [
+    "dist",
+    ".cache"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jambackie/leads.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jambackie/leads/issues"
+  },
+  "homepage": "https://github.com/jambackie/leads#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.3",
+    "parcel-plugin-clean-easy": "^1.0.2",
+    "sass": "^1.32.8"
+  }
+}
