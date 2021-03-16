@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+@import './assets/bebasneue/bebasneue.css';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: inherit;
+  user-select: none;
+}
+
+body {
+  background: #000;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.44em;
+  position: relative;
+}
+
+.bg {
+  background: linear-gradient(135deg, rgb(236, 79, 22), rgb(155, 40, 11));
+  outline: 1px solid green;
+  position: absolute;
+  min-height: 100vh;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  
+  & svg {
+    opacity: .1;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.link {
+  text-decoration: none;
+  transition: all .2s;
+
+  &:hover {
+    opacity: .8;
+  }
+}
+
+.block {
+  display: flex;
+  justify-content: space-between;
+  padding: 2% 12% 6% 11%;
+  @media screen and (max-width: 1200px) {
+    padding: 3% 2%;
+    justify-content: space-around;
+    font-size: .7em;
+  }
+}
+
+.header {
+  position: relative;
+  align-items: center;
+}
+
+.logo {
+  font-weight: 600;
+  font-size: 1.2em;
+}
+
+.register {
+  border: 1px solid #f7f7f7;
+  border-radius: 5px;
+  font-size: 0.75em;
+  font-weight: 500;
+  line-height: 100%;
+  padding: 15px;
+}
+
+.main {
+  position: relative;
+  @media screen and (max-width: 656px) {
+    flex-direction: column;
+    align-items:center;
+    padding-bottom: 12%;
+    text-align: center;
+    & aside, div, p, h2{
+      width: 80%;      
+    }
+  }
+}
+
+.content {
+  width: 48%;
+
+  &__title {
+    margin: 30px 0;
+  }
+
+  &__text {
+    margin: 20px 0;
+    width: 85%;
+    line-height: 150%;
+    font-size: 0.88em;
+  }
+}
+
+.aside {
+  width: 30%;
+}
+
+.slider {
+  margin-bottom: 56px;
+
+  &__buttons {
+    margin-bottom: 25px;
+    display: flex;
+  }
+
+  &__btn {
+    margin-right: 10px;
+    width: 15px;
+    height: 15px;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    border-radius: 50px;
+    background: #ffffff;
+    transition: all .3s;
+
+    &:hover {
+      cursor: pointer;
+      opacity: .7;
+    }
+
+    &-active {
+      background: #000;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__span {
+    font-size: .9em;
+  }
+
+  &__h2 {
+    font-family: 'Bebas Neue';
+    font-size: 4.2em;
+    letter-spacing: 1px;
+    line-height: 120%;
+    display: flex;
+  }
+
+  &__sup {
+    font-size: .25em;
+    margin-top: -30px;
+  }
+}
+
+.plug {
+  font-size: 1.28em;
+  font-weight: 600;
+  padding: 6% 12.6%;
+  border: 1px solid #ffffff;
+  border-radius: 8px;
+}
